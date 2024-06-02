@@ -8,10 +8,10 @@ const AddBook=()=>{
     const [author, setAuthor]=useState("");
     const [price, setPrice]=useState(0);
 
-    const addNewBook=()=>{
+    const addNewBook=async ()=>{
         if(title !=="" && author !=="" && price > 0){
             const newBook:Book={id:uuid(), title:title,author:author,price:price}
-           fetch('http://localhost:3000/books',{
+           await fetch('http://localhost:3000/books',{
             method:'Post',
             headers:{
                 'content-Type':'application/json',

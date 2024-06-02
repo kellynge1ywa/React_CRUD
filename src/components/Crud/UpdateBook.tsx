@@ -15,10 +15,10 @@ const UpdateBook = (props: Props) => {
     const [author, setAuthor] = useState(toBeUpdated.author);
     const [price, setPrice] = useState(toBeUpdated.price);
 
-    const updateBook = (updated:Book) => {
+    const updateBook = async (updated:Book) => {
         if (title !== "" && author !== "" && price > 0) {
             updated = { id: updated.id, title: title, author: author, price: price }
-            fetch(`http://localhost:3000/books/${toBeUpdated.id}`, {
+           await  fetch(`http://localhost:3000/books/${toBeUpdated.id}`, {
                 method: 'Put',
                 headers: {
                     'content-Type': 'application/json',
