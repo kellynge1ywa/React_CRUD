@@ -1,0 +1,28 @@
+{
+  "books": [
+    {
+      "id": "53f5c5ef-19c2-40ae-837c-ea00f35e92ab",
+      "title": "My experiment with Truth",
+      "author": "Mahatma Gadhi",
+      "price": "700"
+    },
+    {
+      "id": "65927411-57cc-4a1a-96e9-bc29e1b93c0d",
+      "title": "Damu Nyeusi",
+      "author": "Ken Walibora",
+      "price": "500"
+    },
+    {
+      "id": "b12013e0-aa79-46c5-abd8-64a400f26434",
+      "title": "Angular ",
+      "author": "Wewe",
+      "price": "145"
+    },
+    {
+      "id": "9087b34c-d707-48c4-9972-86aff3457413",
+      "title": "Conquest of happiness",
+      "author": "Bertrand Russell",
+      "price": "800"
+    }
+  ]
+}
